@@ -13,15 +13,26 @@
 
 <!-- HEADER -->
 <header class="header">
-  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
   <img src="Images/logo.png" class="logo" alt="BagSphere Logo">
   <p class="tagline">Trust • Style • Durability</p>
+
   <nav class="nav">
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
   </nav>
 </header>
+
+<!-- CONTACT BAR -->
+<div class="contact-bar">
+  <a href="tel:+918777438644" class="call-btn">
+    📞 Bulk Orders: +91 87774 38644
+  </a>
+
+  <a href="https://wa.me/916291083811" target="_blank" class="wa-btn">
+    💬 WhatsApp Helpline
+  </a>
+</div>
 
 <!-- BREADCRUMB -->
 <div class="container breadcrumb">
@@ -32,22 +43,24 @@
 <!-- CONTACT SECTION -->
 <section class="products contact-section">
   <div class="container">
-    <h3 class="section-title">Get in Touch</h3>
+    <h2 class="section-title">Get in Touch</h2>
 
     <div class="product-grid contact-grid">
 
       <!-- CONTACT INFO -->
       <div class="product-card contact-info">
-        <h4>Contact Information</h4>
-        <p>📍 Address: 123 BagSphere Street, Mumbai, India</p>
-        <p>📞 Phone: <strong>8777438644</strong></p>
-        <p>✉ Email: <strong>support@bagsphere.com</strong></p>
-        <p>🌐 Website: <a href="index.html">www.bagsphere.github.io</a></p>
+        <h3>Contact Information</h3>
+        <p>📍 Mumbai, India</p>
+        <p>📞 Bulk Orders: <strong>+91 87774 38644</strong></p>
+        <p>💬 Helpline WhatsApp: <strong>+91 62910 83811</strong></p>
+        <p>🌐 Website: <a href="index.html">bagsphere.github.io</a></p>
       </div>
 
       <!-- CONTACT FORM -->
       <div class="product-card contact-form-card">
-        <h4>Send a Message</h4>
+        <h3>Send a Message</h3>
+
+        <!-- NOTE: mailto is simple & works on GitHub Pages -->
         <form action="mailto:support@bagsphere.com" method="post" enctype="text/plain">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
@@ -60,32 +73,18 @@
   </div>
 </section>
 
-<!-- TRUST SECTION -->
-<section class="trust">
-  <div class="container trust-grid">
-    <div>✔ Fast Response</div>
-    <div>✔ Trusted Brand</div>
-    <div>✔ Secure Communication</div>
-    <div>✔ 3 Year Warranty</div>
-  </div>
-</section>
-
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="container">
-    <h4>BagSphere</h4>
-    <p>Premium Bags & Luggage</p>
-    <p>📞 Contact: <strong>8777438644</strong></p>
-    <p>© 2025 BagSphere</p>
-  </div>
+  <p><strong>BagSphere</strong></p>
+  <p>📦 Bulk Contact: <a href="tel:+918777438644">+91 87774 38644</a></p>
+  <p>💬 WhatsApp Helpline: <a href="https://wa.me/916291083811" target="_blank">+91 62910 83811</a></p>
+  <p>© 2025 BagSphere</p>
 </footer>
 
-<!-- WHATSAPP FLOAT BUTTON -->
-<a href="https://wa.me/918777438644" class="whatsapp-btn" target="_blank">
-  💬 Buy on WhatsApp
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/916291083811" class="whatsapp-float" target="_blank">
+  💬
 </a>
-
-<script src="script.js"></script>
 
 </body>
 </html>
