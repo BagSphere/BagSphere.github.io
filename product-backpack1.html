@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header class="header">
-  <img src="Images/logo.png" class="logo">
+  <img src="Images/logo.png" alt="BagSphere Logo" class="logo">
+  <p class="tagline">Trust • Style • Durability</p>
   <nav class="nav">
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
@@ -18,19 +18,42 @@
   </nav>
 </header>
 
-<section class="products">
-  <div class="product-card">
-    <img src="Images/backpack1.jpg">
-    <h3>Adventure Backpack</h3>
-    <p class="price">₹689</p>
-    <p>✔ Water Resistant<br>✔ Laptop Compartment<br>✔ Lightweight</p>
-    <a href="https://wa.me/916291083811" class="wa-btn">Buy on WhatsApp</a>
+<div class="contact-bar">
+  <a href="tel:+918777438644" class="call-btn">📞 Bulk Orders: +91 87774 38644</a>
+  <a href="https://wa.me/916291083811" target="_blank" class="wa-btn">
+    <img src="Images/whatsapp.png" alt="WhatsApp"> Helpline Chat
+  </a>
+</div>
+
+<section class="products product-detail">
+  <a href="products.html" class="btn back-btn">← Back to Products</a>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="Images/backpack1.jpg" alt="Adventure Backpack">
+      <h2>Adventure Backpack</h2>
+      <p class="price">₹689</p>
+      <p>High quality adventure backpack, comfortable for hiking, travel, and daily use. Durable fabric and multiple compartments.</p>
+      <ul>
+        <li>✔ Durable Fabric</li>
+        <li>✔ Comfortable Straps</li>
+        <li>✔ Multi-compartment</li>
+        <li>✔ Water Resistant</li>
+      </ul>
+      <div class="buy-buttons">
+        <a href="upi://pay?pa=bagsphere@ybl&pn=BagSphere&am=689&cu=INR" class="btn">Pay via UPI</a>
+        <a href="https://wa.me/918777438644?text=I want to buy Adventure Backpack for ₹689" class="btn whatsapp" target="_blank">Order on WhatsApp</a>
+      </div>
+    </div>
   </div>
 </section>
 
 <footer class="footer">
+  <p><strong>BagSphere</strong></p>
+  <p>📦 Bulk Contact: <a href="tel:+918777438644">+91 87774 38644</a></p>
+  <p>💬 WhatsApp Helpline: <a href="https://wa.me/916291083811" target="_blank">+91 62910 83811</a></p>
   <p>© 2025 BagSphere</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
