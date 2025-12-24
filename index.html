@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAGSTASH | Premium Products</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="logo"><image=Image/logo.png></div>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="cart" id="cartIcon">🛒 <span id="cart-count">0</span></div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <h1>Premium Products, Best Prices</h1>
+    <p>Shop smart. Shop with confidence.</p>
+    <button class="btn" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products" id="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid" id="productGrid">
+      <!-- Skeletons dynamically replaced by JS -->
+    </div>
+  </section>
+
+  <!-- ===== CART PANEL ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart">✖</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Your cart is empty</p>
+    </div>
+    <div class="cart-footer">
+      <p>Total: ₹<span id="cartTotal">0</span></p>
+      <a href="checkout.html" class="btn">Checkout via WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- ===== MOBILE BOTTOM NAV ===== -->
+  <nav class="mobile-nav">
+    <a href="#" class="active">
+      <span>🏠</span>
+      <small>Home</small>
+    </a>
+    <a href="#products">
+      <span>🛍️</span>
+      <small>Shop</small>
+    </a>
+    <a href="javascript:void(0)" id="mobileCart">
+      <span>🛒</span>
+      <small>Cart</small>
+    </a>
+    <a href="#">
+      <span>👤</span>
+      <small>Account</small>
+    </a>
+  </nav>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
